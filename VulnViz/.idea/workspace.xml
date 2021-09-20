@@ -7,9 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57987d52-d4c1-45e6-bf15-c31b41415229" name="Default Changelist" comment="final commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="57987d52-d4c1-45e6-bf15-c31b41415229" name="Default Changelist" comment="final commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +42,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -235,7 +234,7 @@
       <workItem from="1632059352601" duration="2291000" />
       <workItem from="1632080542644" duration="4525000" />
       <workItem from="1632126816933" duration="1436000" />
-      <workItem from="1632128407532" duration="972000" />
+      <workItem from="1632128407532" duration="1353000" />
     </task>
     <task id="LOCAL-00001" summary="Nearly finished">
       <created>1629468636073</created>
@@ -258,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632126341146</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="final commit">
+      <created>1632129406907</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632129406907</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
