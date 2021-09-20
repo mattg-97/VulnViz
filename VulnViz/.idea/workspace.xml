@@ -7,7 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57987d52-d4c1-45e6-bf15-c31b41415229" name="Default Changelist" comment="final commit" />
+    <list default="true" id="57987d52-d4c1-45e6-bf15-c31b41415229" name="Default Changelist" comment="final commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,7 +235,7 @@
       <workItem from="1632059352601" duration="2291000" />
       <workItem from="1632080542644" duration="4525000" />
       <workItem from="1632126816933" duration="1436000" />
-      <workItem from="1632128407532" duration="354000" />
+      <workItem from="1632128407532" duration="972000" />
     </task>
     <task id="LOCAL-00001" summary="Nearly finished">
       <created>1629468636073</created>
@@ -281,6 +283,8 @@
       <path value="$PROJECT_DIR$/nmapvulners2csv" />
       <path value="$PROJECT_DIR$/scripts/vulscan" />
       <path value="$PROJECT_DIR$/templates/netjsongraph.js" />
+      <path value="$PROJECT_DIR$/scripts/nmapvulners2csv" />
+      <path value="$PROJECT_DIR$/static/netjsongraph.js" />
     </ignored-roots>
     <MESSAGE value="Nearly finished" />
     <MESSAGE value="final commit before rebasing" />
