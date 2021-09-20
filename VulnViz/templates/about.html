@@ -1,0 +1,52 @@
+{% extends 'boilerplate.html' %} {% block title %}
+<title>About</title>
+
+{% endblock %} {% block vizstyle %}
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400);
+
+  html,
+  body {
+    height: 100%;
+  }
+  .content {
+    background-color: black;
+  }
+  .outer-container {
+    top: 5vh;
+  }
+  .background-container {
+    background-attachment: scroll;
+    height: 100%;
+
+    background: #bdc3c7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to bottom,
+      #2c3e50,
+      #bdc3c7
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #2c3e50,
+      #bdc3c7
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+</style>
+{% endblock %} {% block content %}
+
+<div class="content">
+  <div class="dash" id="dash">
+    <div class="bg-light background-container">
+      <br />
+      <br />
+      <div
+        class="container outer-container rounded bg-light bg-opacity-75 p-5"
+      ></div>
+      <br />
+      <br />
+    </div>
+  </div>
+</div>
+
+{% endblock %}

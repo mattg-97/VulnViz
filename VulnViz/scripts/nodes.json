@@ -1,0 +1,599 @@
+{
+    "type": "NetworkGraph",
+    "protocol": "static",
+    "version": "null",
+    "metric": "null",
+    "label": "192.168.1.117",
+    "nodes": [
+        {
+            "id": "192.168.1.83",
+            "label": "192.168.1.83",
+            "properties": {
+                "open-ports": true,
+                "data": [
+                    {
+                        "port": 80,
+                        "protocol": "tcp",
+                        "service": "http"
+                    },
+                    {
+                        "port": 443,
+                        "protocol": "tcp",
+                        "service": "https"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "192.168.1.86",
+            "label": "192.168.1.86",
+            "properties": {
+                "open-ports": true,
+                "data": [
+                    {
+                        "port": 80,
+                        "protocol": "tcp",
+                        "service": "http"
+                    },
+                    {
+                        "port": 443,
+                        "protocol": "tcp",
+                        "service": "https"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "192.168.1.112",
+            "label": "192.168.1.112",
+            "properties": []
+        },
+        {
+            "id": "192.168.1.114",
+            "label": "192.168.1.114",
+            "properties": {
+                "open-ports": true,
+                "data": [
+                    {
+                        "port": 8008,
+                        "protocol": "tcp",
+                        "service": "http"
+                    },
+                    {
+                        "port": 8009,
+                        "protocol": "tcp",
+                        "service": "ajp13"
+                    },
+                    {
+                        "port": 8443,
+                        "protocol": "tcp",
+                        "service": "https-alt"
+                    },
+                    {
+                        "port": 9000,
+                        "protocol": "tcp",
+                        "service": "cslistener"
+                    },
+                    {
+                        "port": 10001,
+                        "protocol": "tcp",
+                        "service": "scp-config"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "192.168.1.116",
+            "label": "192.168.1.116",
+            "properties": {
+                "open-ports": true,
+                "data": [
+                    {
+                        "port": 80,
+                        "protocol": "tcp",
+                        "service": "http"
+                    },
+                    {
+                        "port": 8600,
+                        "protocol": "tcp",
+                        "service": "asterix"
+                    },
+                    {
+                        "port": 8888,
+                        "protocol": "tcp",
+                        "service": "sun-answerbook"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "192.168.1.117",
+            "label": "192.168.1.117",
+            "properties": []
+        },
+        {
+            "id": "192.168.1.135",
+            "label": "192.168.1.135",
+            "properties": []
+        },
+        {
+            "id": "192.168.1.254",
+            "label": "192.168.1.254",
+            "properties": {
+                "open-ports": true,
+                "data": [
+                    {
+                        "port": 53,
+                        "protocol": "tcp",
+                        "service": "domain"
+                    },
+                    {
+                        "port": 80,
+                        "protocol": "tcp",
+                        "service": "http"
+                    },
+                    {
+                        "port": 443,
+                        "protocol": "tcp",
+                        "service": "https"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "13.227.172.32",
+            "label": "server-13-227-172-32.lhr52.r.cloudfront.net",
+            "properties": {
+                "open-ports": true,
+                "data": [
+                    {
+                        "port": 80,
+                        "protocol": "tcp",
+                        "service": "http"
+                    },
+                    {
+                        "port": 443,
+                        "protocol": "tcp",
+                        "service": "https"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "239.255.255.250",
+            "label": "239.255.255.250",
+            "properties": []
+        },
+        {
+            "id": "130.211.26.229",
+            "label": "229.26.211.130.bc.googleusercontent.com",
+            "properties": {
+                "open-ports": true,
+                "data": [
+                    {
+                        "port": 25,
+                        "protocol": "tcp",
+                        "service": "smtp"
+                    },
+                    {
+                        "port": 80,
+                        "protocol": "tcp",
+                        "service": "http"
+                    },
+                    {
+                        "port": 110,
+                        "protocol": "tcp",
+                        "service": "pop3"
+                    },
+                    {
+                        "port": 143,
+                        "protocol": "tcp",
+                        "service": "imap"
+                    },
+                    {
+                        "port": 443,
+                        "protocol": "tcp",
+                        "service": "https"
+                    },
+                    {
+                        "port": 465,
+                        "protocol": "tcp",
+                        "service": "smtps"
+                    },
+                    {
+                        "port": 587,
+                        "protocol": "tcp",
+                        "service": "submission"
+                    },
+                    {
+                        "port": 993,
+                        "protocol": "tcp",
+                        "service": "imaps"
+                    },
+                    {
+                        "port": 995,
+                        "protocol": "tcp",
+                        "service": "pop3s"
+                    },
+                    {
+                        "port": 3389,
+                        "protocol": "tcp",
+                        "service": "ms-wbt-server"
+                    },
+                    {
+                        "port": 5900,
+                        "protocol": "tcp",
+                        "service": "vnc"
+                    },
+                    {
+                        "port": 8080,
+                        "protocol": "tcp",
+                        "service": "http-proxy"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "151.101.1.21",
+            "label": "151.101.1.21",
+            "properties": {
+                "open-ports": true,
+                "data": [
+                    {
+                        "port": 80,
+                        "protocol": "tcp",
+                        "service": "http"
+                    },
+                    {
+                        "port": 443,
+                        "protocol": "tcp",
+                        "service": "https"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "130.211.30.54",
+            "label": "54.30.211.130.bc.googleusercontent.com",
+            "properties": {
+                "open-ports": true,
+                "data": [
+                    {
+                        "port": 25,
+                        "protocol": "tcp",
+                        "service": "smtp"
+                    },
+                    {
+                        "port": 80,
+                        "protocol": "tcp",
+                        "service": "http"
+                    },
+                    {
+                        "port": 110,
+                        "protocol": "tcp",
+                        "service": "pop3"
+                    },
+                    {
+                        "port": 143,
+                        "protocol": "tcp",
+                        "service": "imap"
+                    },
+                    {
+                        "port": 443,
+                        "protocol": "tcp",
+                        "service": "https"
+                    },
+                    {
+                        "port": 465,
+                        "protocol": "tcp",
+                        "service": "smtps"
+                    },
+                    {
+                        "port": 587,
+                        "protocol": "tcp",
+                        "service": "submission"
+                    },
+                    {
+                        "port": 993,
+                        "protocol": "tcp",
+                        "service": "imaps"
+                    },
+                    {
+                        "port": 995,
+                        "protocol": "tcp",
+                        "service": "pop3s"
+                    },
+                    {
+                        "port": 3389,
+                        "protocol": "tcp",
+                        "service": "ms-wbt-server"
+                    },
+                    {
+                        "port": 5900,
+                        "protocol": "tcp",
+                        "service": "vnc"
+                    },
+                    {
+                        "port": 8080,
+                        "protocol": "tcp",
+                        "service": "http-proxy"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "142.250.179.238",
+            "label": "lhr25s31-in-f14.1e100.net",
+            "properties": {
+                "open-ports": true,
+                "data": [
+                    {
+                        "port": 80,
+                        "protocol": "tcp",
+                        "service": "http"
+                    },
+                    {
+                        "port": 443,
+                        "protocol": "tcp",
+                        "service": "https"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "130.211.16.53",
+            "label": "53.16.211.130.bc.googleusercontent.com",
+            "properties": {
+                "open-ports": true,
+                "data": [
+                    {
+                        "port": 25,
+                        "protocol": "tcp",
+                        "service": "smtp"
+                    },
+                    {
+                        "port": 80,
+                        "protocol": "tcp",
+                        "service": "http"
+                    },
+                    {
+                        "port": 110,
+                        "protocol": "tcp",
+                        "service": "pop3"
+                    },
+                    {
+                        "port": 143,
+                        "protocol": "tcp",
+                        "service": "imap"
+                    },
+                    {
+                        "port": 443,
+                        "protocol": "tcp",
+                        "service": "https"
+                    },
+                    {
+                        "port": 465,
+                        "protocol": "tcp",
+                        "service": "smtps"
+                    },
+                    {
+                        "port": 587,
+                        "protocol": "tcp",
+                        "service": "submission"
+                    },
+                    {
+                        "port": 993,
+                        "protocol": "tcp",
+                        "service": "imaps"
+                    },
+                    {
+                        "port": 995,
+                        "protocol": "tcp",
+                        "service": "pop3s"
+                    },
+                    {
+                        "port": 3389,
+                        "protocol": "tcp",
+                        "service": "ms-wbt-server"
+                    },
+                    {
+                        "port": 5900,
+                        "protocol": "tcp",
+                        "service": "vnc"
+                    },
+                    {
+                        "port": 8080,
+                        "protocol": "tcp",
+                        "service": "http-proxy"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "192.168.1.114",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "192.168.1.117",
+            "target": "192.168.1.114",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "13.227.172.32",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": "TLS"
+            }
+        },
+        {
+            "source": "192.168.1.117",
+            "target": "13.227.172.32",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "13.227.172.32",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "192.168.1.254",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": ""
+            }
+        },
+        {
+            "source": "192.168.1.117",
+            "target": "192.168.1.254",
+            "cost": 1.0,
+            "properties": {
+                "type": ""
+            }
+        },
+        {
+            "source": "239.255.255.250",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": "UDP"
+            }
+        },
+        {
+            "source": "192.168.1.117",
+            "target": "192.168.1.114",
+            "cost": 1.0,
+            "properties": {
+                "type": "UDP"
+            }
+        },
+        {
+            "source": "130.211.26.229",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "192.168.1.117",
+            "target": "130.211.26.229",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "151.101.1.21",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "130.211.30.54",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "192.168.1.117",
+            "target": "151.101.1.21",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "192.168.1.117",
+            "target": "130.211.30.54",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "142.250.179.238",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "130.211.16.53",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "192.168.1.117",
+            "target": "142.250.179.238",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "192.168.1.117",
+            "target": "130.211.16.53",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "192.168.1.117",
+            "target": "192.168.1.135",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "192.168.1.135",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": "TCP"
+            }
+        },
+        {
+            "source": "192.168.1.114",
+            "target": "192.168.1.117",
+            "cost": 1.0,
+            "properties": {
+                "type": ""
+            }
+        },
+        {
+            "source": "192.168.1.117",
+            "target": "192.168.1.114",
+            "cost": 1.0,
+            "properties": {
+                "type": ""
+            }
+        }
+    ]
+}

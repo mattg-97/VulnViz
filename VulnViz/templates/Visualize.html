@@ -1,0 +1,228 @@
+{% extends 'boilerplate.html' %} {% block title %}
+<title>VulnViz</title>
+{% endblock %} {% block links %}
+<link href="../static/netjsongraph.js/src/netjsongraph.css" rel="stylesheet" />
+<!-- theme can be easily customized via css -->
+<link
+  href="../static/netjsongraph.js/src/netjsongraph-theme.css"
+  rel="stylesheet"
+/>
+{% endblock %} {% block vizstyle %}
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400);
+
+  body {
+    overflow: hidden;
+  }
+  .TLS {
+    stroke: dodgerblue;
+    stroke-opacity: 0.7;
+  } /* light green */
+  /* light grey */
+  .UDP {
+    stroke: #00ff00;
+    stroke-opacity: 0.7;
+  } /* glowing green */
+  .TCP {
+    stroke: lightskyblue;
+    stroke-opacity: 0.7;
+  }
+  .ARP {
+    stroke: #eb1bc8;
+    stroke-opacity: 0.7;
+  }
+  .njg-node {
+    fill: #3182bd;
+  }
+  .njg-node.open-ports {
+    fill: #e92705 !important;
+  }
+  .njg-link {
+    stroke-width: 5px;
+  }
+  .njg-link:hover,
+  .njg-link.njg-open {
+    stroke-width: 6px !important;
+    stroke-opacity: 0.7 !important;
+  }
+
+  #legend {
+    position: absolute;
+    top: auto;
+    left: 3vw;
+    bottom: 10vh;
+    width: auto;
+    height: auto;
+    max-width: 250px;
+
+    padding: 0 15px;
+    background: #fbfbfb;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    color: #6d6357;
+    font-family: Arial, sans-serif;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  #legend p {
+    line-height: 16px;
+    margin: 10px 0;
+  }
+  #legend span {
+    width: 16px;
+    margin-right: 5px;
+  }
+  #legend span.circle {
+    display: inline-block;
+    border-radius: 50%;
+    height: 16px;
+  }
+  #legend span.link {
+    display: inline-block;
+    height: 5px;
+    border-bottom-width: 6px;
+    border-bottom-style: solid;
+  }
+  #legend .node {
+    background-color: #3182bd;
+  }
+  #legend .open-ports {
+    background-color: #e92705;
+  }
+  #legend .TLS {
+    border-color: dodgerblue;
+  }
+  #legend .ARP {
+    border-color: #eb1bc8;
+  } /* light green */
+  /* light grey */
+  #legend .UDP {
+    border-color: #00ff00;
+  } /* glowing green */
+  #legend .TCP {
+    border-color: lightskyblue;
+  }
+  #vizcontain {
+    width: 100vw;
+    height: 100vh;
+  }
+  .loadcontain {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    display: none;
+    top: 0;
+    left: 0;
+  }
+  HTML CSSResult Skip Results Iframe body,
+  html {
+    height: 100%;
+    text-align: center;
+  }
+
+  .loader {
+    display: inline-block;
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    border: 4px solid #fff;
+    top: 50%;
+    animation: loader 3s infinite ease;
+  }
+
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 3s infinite ease-in;
+  }
+
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(180deg);
+    }
+
+    50% {
+      transform: rotate(180deg);
+    }
+
+    75% {
+      transform: rotate(360deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+
+    25% {
+      height: 0%;
+    }
+
+    50% {
+      height: 100%;
+    }
+
+    75% {
+      height: 100%;
+    }
+
+    100% {
+      height: 0%;
+    }
+  }
+  .loadingtext {
+    color: white;
+    font-family: "Consolas", "Deja Vu Sans Mono", "Bitstream Vera Sans Mono",
+      monospace;
+    font-size: x-large;
+  }
+</style>
+{% endblock %} {% block content %}
+
+<div class="container-fluid loadcontain bg-dark">
+  <span class="loader"><span class="loader-inner"></span></span>
+  <p class="loadingtext">Scanning...</p>
+</div>
+<div id="vizcontain">
+  <div id="legend">
+    <p><span class="circle node">&nbsp;</span> Node: Closed Ports</p>
+    <p><span class="circle open-ports">&nbsp;</span> Node: Open Ports</p>
+    <p><span class="link TLS">&nbsp;</span> TLS link</p>
+    <p><span class="link ARP">&nbsp;</span> ARP Link</p>
+    <p><span class="link UDP">&nbsp;</span> UDP Link</p>
+    <p><span class="link TCP">&nbsp;</span> TCP link</p>
+  </div>
+</div>
+<script src="../static/netjsongraph.js/lib/d3.min.js"></script>
+<script src="../static/netjsongraph.js/src/netjsongraph.js"></script>
+<script>
+  d3.netJsonGraph("../static/netjsongraph.js/data/nodes.json", {
+    linkDistance: 200,
+    el: "#vizcontain",
+    charge: -900,
+    circleRadius: 18,
+    defaultStyle: false,
+    linkClassProperty: "type",
+    nodeClassProperty: "open-ports",
+    labelDy: "2.5em",
+  });
+</script>
+<script>
+  const loaderFunction = () => {
+    document.querySelector(".loadcontain").style.display = "block";
+    document.querySelector("#vizcontain").style.display = "none";
+  };
+</script>
+{% endblock %}
