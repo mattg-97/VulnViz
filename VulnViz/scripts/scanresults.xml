@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///opt/homebrew/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.91 scan initiated Sun Sep 19 21:26:42 2021 as: nmap -sV -T4 -&#45;script vulners -p 21,22,80 -oX scanresults.xml 10.10.10.245 -->
-<nmaprun scanner="nmap" args="nmap -sV -T4 -&#45;script vulners -p 21,22,80 -oX scanresults.xml 10.10.10.245" start="1632083202" startstr="Sun Sep 19 21:26:42 2021" version="7.91" xmloutputversion="1.05">
+<!-- Nmap 7.91 scan initiated Tue Sep 21 11:08:44 2021 as: nmap -sV -T4 -&#45;script vulners -p 21,22,80 -oX scanresults.xml 10.10.10.245 -->
+<nmaprun scanner="nmap" args="nmap -sV -T4 -&#45;script vulners -p 21,22,80 -oX scanresults.xml 10.10.10.245" start="1632218924" startstr="Tue Sep 21 11:08:44 2021" version="7.91" xmloutputversion="1.05">
 <scaninfo type="connect" protocol="tcp" numservices="3" services="21-22,80"/>
 <verbose level="0"/>
 <debugging level="0"/>
@@ -11,83 +11,83 @@
 <hostnames>
 </hostnames>
 </hosthint>
-<host starttime="1632083202" endtime="1632083330"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<host starttime="1632218924" endtime="1632219052"><status state="up" reason="syn-ack" reason_ttl="0"/>
 <address addr="10.10.10.245" addrtype="ipv4"/>
 <hostnames>
 </hostnames>
 <ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service></port>
 <port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="vulners" output="&#xa;  cpe:/a:openbsd:openssh:8.2p1: &#xa;    &#x9;CVE-2020-15778&#x9;6.8&#x9;https://vulners.com/cve/CVE-2020-15778&#xa;    &#x9;CVE-2020-12062&#x9;5.0&#x9;https://vulners.com/cve/CVE-2020-12062&#xa;    &#x9;MSF:ILITIES/GENTOO-LINUX-CVE-2021-28041/&#x9;4.6&#x9;https://vulners.com/metasploit/MSF:ILITIES/GENTOO-LINUX-CVE-2021-28041/&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2021-28041&#x9;4.6&#x9;https://vulners.com/cve/CVE-2021-28041&#xa;    &#x9;MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-14145&#x9;4.3&#x9;https://vulners.com/cve/CVE-2020-14145"><table key="cpe:/a:openbsd:openssh:8.2p1">
 <table>
-<elem key="id">CVE-2020-15778</elem>
-<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
 <elem key="cvss">6.8</elem>
-<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-15778</elem>
 </table>
 <table>
-<elem key="id">CVE-2020-12062</elem>
-<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
 <elem key="cvss">5.0</elem>
-<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-12062</elem>
 </table>
 <table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">true</elem>
 <elem key="id">MSF:ILITIES/GENTOO-LINUX-CVE-2021-28041/</elem>
-<elem key="is_exploit">true</elem>
-<elem key="cvss">4.6</elem>
-<elem key="type">metasploit</elem>
 </table>
 <table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">false</elem>
 <elem key="id">CVE-2021-28041</elem>
-<elem key="is_exploit">false</elem>
-<elem key="cvss">4.6</elem>
-<elem key="type">cve</elem>
 </table>
 <table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
 <elem key="id">MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/</elem>
-<elem key="is_exploit">true</elem>
-<elem key="cvss">4.3</elem>
-<elem key="type">metasploit</elem>
 </table>
 <table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
 <elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/</elem>
-<elem key="is_exploit">true</elem>
-<elem key="cvss">4.3</elem>
-<elem key="type">metasploit</elem>
 </table>
 <table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
 <elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/</elem>
-<elem key="is_exploit">true</elem>
-<elem key="cvss">4.3</elem>
-<elem key="type">metasploit</elem>
 </table>
 <table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
 <elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/</elem>
-<elem key="is_exploit">true</elem>
-<elem key="cvss">4.3</elem>
-<elem key="type">metasploit</elem>
 </table>
 <table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
 <elem key="id">MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/</elem>
-<elem key="is_exploit">true</elem>
-<elem key="cvss">4.3</elem>
-<elem key="type">metasploit</elem>
 </table>
 <table>
-<elem key="id">CVE-2020-14145</elem>
-<elem key="is_exploit">false</elem>
-<elem key="cvss">4.3</elem>
 <elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-14145</elem>
 </table>
 </table>
 </script></port>
-<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="gunicorn" servicefp="SF-Port80-TCP:V=7.91%I=7%D=9/19%Time=61479D08%P=arm-apple-darwin20.2.0%r(GetRequest,2FEE,&quot;HTTP/1\.0\x20200\x20OK\r\nServer:\x20gunicorn\r\nDate:\x20Sun,\x2019\x20Sep\x202021\x2020:41:02\x20GMT\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x2019386\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20class=\&quot;no-js\&quot;\x20lang=\&quot;en\&quot;&gt;\n\n&lt;head&gt;\n\x20\x20\x20\x20&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\x20\x20\x20\x20&lt;meta\x20http-equiv=\&quot;x-ua-compatible\&quot;\x20content=\&quot;ie=edge\&quot;&gt;\n\x20\x20\x20\x20&lt;title&gt;Security\x20Dashboard&lt;/title&gt;\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;shortcut\x20icon\&quot;\x20type=\&quot;image/png\&quot;\x20href=\&quot;/static/images/icon/favicon\.ico\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/bootstrap\.min\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/font-awesome\.min\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/themify-icons\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/metisMenu\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/owl\.carousel\.min\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/slicknav\.min\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;!-&#45;\x20amchar&quot;)%r(HTTPOptions,B3,&quot;HTTP/1\.0\x20200\x20OK\r\nServer:\x20gunicorn\r\nDate:\x20Sun,\x2019\x20Sep\x202021\x2020:41:02\x20GMT\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nAllow:\x20OPTIONS,\x20GET,\x20HEAD\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RTSPRequest,121,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\nContent-Length:\x20196\r\n\r\n&lt;html&gt;\n\x20\x20&lt;head&gt;\n\x20\x20\x20\x20&lt;title&gt;Bad\x20Request&lt;/title&gt;\n\x20\x20&lt;/head&gt;\n\x20\x20&lt;body&gt;\n\x20\x20\x20\x20&lt;h1&gt;&lt;p&gt;Bad\x20Request&lt;/p&gt;&lt;/h1&gt;\n\x20\x20\x20\x20Invalid\x20HTTP\x20Version\x20&amp;#x27;Invalid\x20HTTP\x20Version:\x20&amp;#x27;RTSP/1\.0&amp;#x27;&amp;#x27;\n\x20\x20&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(FourOhFourRequest,189,&quot;HTTP/1\.0\x20404\x20NOT\x20FOUND\r\nServer:\x20gunicorn\r\nDate:\x20Sun,\x2019\x20Sep\x202021\x2020:41:07\x20GMT\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20232\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//W3C//DTD\x20HTML\x203\.2\x20Final//EN\&quot;&gt;\n&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;\n&lt;h1&gt;Not\x20Found&lt;/h1&gt;\n&lt;p&gt;The\x20requested\x20URL\x20was\x20not\x20found\x20on\x20the\x20server\.\x20If\x20you\x20entered\x20the\x20URL\x20manually\x20please\x20check\x20your\x20spelling\x20and\x20try\x20again\.&lt;/p&gt;\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 404 NOT FOUND&#xa;    Server: gunicorn&#xa;    Date: Sun, 19 Sep 2021 20:41:07 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 232&#xa;    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;&#xa;    &lt;title&gt;404 Not Found&lt;/title&gt;&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;&#xa;    &lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Server: gunicorn&#xa;    Date: Sun, 19 Sep 2021 20:41:02 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 19386&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;&#xa;    &lt;title&gt;Security Dashboard&lt;/title&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/static/images/icon/favicon.ico&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/bootstrap.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/font-awesome.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/themify-icons.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/metisMenu.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/owl.carousel.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/slicknav.min.css&quot;&gt;&#xa;    &lt;!-&#45; amchar&#xa;  HTTPOptions: &#xa;    HTTP/1.0 200 OK&#xa;    Server: gunicorn&#xa;    Date: Sun, 19 Sep 2021 20:41:02 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Allow: OPTIONS, GET, HEAD&#xa;    Content-Length: 0&#xa;  RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    Content-Length: 196&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;h1&gt;&lt;p&gt;Bad Request&lt;/p&gt;&lt;/h1&gt;&#xa;    Invalid HTTP Version &amp;#x27;Invalid HTTP Version: &amp;#x27;RTSP/1.0&amp;#x27;&amp;#x27;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 404 NOT FOUND&#xa;    Server: gunicorn&#xa;    Date: Sun, 19 Sep 2021 20:41:07 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 232&#xa;    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;&#xa;    &lt;title&gt;404 Not Found&lt;/title&gt;&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;&#xa;    &lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;</elem>
-<elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Server: gunicorn&#xa;    Date: Sun, 19 Sep 2021 20:41:02 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 19386&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;&#xa;    &lt;title&gt;Security Dashboard&lt;/title&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/static/images/icon/favicon.ico&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/bootstrap.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/font-awesome.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/themify-icons.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/metisMenu.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/owl.carousel.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/slicknav.min.css&quot;&gt;&#xa;    &lt;!-&#45; amchar</elem>
-<elem key="HTTPOptions">&#xa;    HTTP/1.0 200 OK&#xa;    Server: gunicorn&#xa;    Date: Sun, 19 Sep 2021 20:41:02 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Allow: OPTIONS, GET, HEAD&#xa;    Content-Length: 0</elem>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="gunicorn" servicefp="SF-Port80-TCP:V=7.91%I=7%D=9/21%Time=6149AF32%P=arm-apple-darwin20.2.0%r(GetRequest,2AAC,&quot;HTTP/1\.0\x20200\x20OK\r\nServer:\x20gunicorn\r\nDate:\x20Tue,\x2021\x20Sep\x202021\x2010:23:06\x20GMT\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x2019386\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20class=\&quot;no-js\&quot;\x20lang=\&quot;en\&quot;&gt;\n\n&lt;head&gt;\n\x20\x20\x20\x20&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\x20\x20\x20\x20&lt;meta\x20http-equiv=\&quot;x-ua-compatible\&quot;\x20content=\&quot;ie=edge\&quot;&gt;\n\x20\x20\x20\x20&lt;title&gt;Security\x20Dashboard&lt;/title&gt;\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;shortcut\x20icon\&quot;\x20type=\&quot;image/png\&quot;\x20href=\&quot;/static/images/icon/favicon\.ico\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/bootstrap\.min\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/font-awesome\.min\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/themify-icons\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/metisMenu\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/owl\.carousel\.min\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/slicknav\.min\.css\&quot;&gt;\n\x20\x20\x20\x20&lt;!-&#45;\x20amchar&quot;)%r(HTTPOptions,B3,&quot;HTTP/1\.0\x20200\x20OK\r\nServer:\x20gunicorn\r\nDate:\x20Tue,\x2021\x20Sep\x202021\x2010:23:06\x20GMT\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nAllow:\x20GET,\x20HEAD,\x20OPTIONS\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RTSPRequest,121,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\nContent-Length:\x20196\r\n\r\n&lt;html&gt;\n\x20\x20&lt;head&gt;\n\x20\x20\x20\x20&lt;title&gt;Bad\x20Request&lt;/title&gt;\n\x20\x20&lt;/head&gt;\n\x20\x20&lt;body&gt;\n\x20\x20\x20\x20&lt;h1&gt;&lt;p&gt;Bad\x20Request&lt;/p&gt;&lt;/h1&gt;\n\x20\x20\x20\x20Invalid\x20HTTP\x20Version\x20&amp;#x27;Invalid\x20HTTP\x20Version:\x20&amp;#x27;RTSP/1\.0&amp;#x27;&amp;#x27;\n\x20\x20&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(FourOhFourRequest,189,&quot;HTTP/1\.0\x20404\x20NOT\x20FOUND\r\nServer:\x20gunicorn\r\nDate:\x20Tue,\x2021\x20Sep\x202021\x2010:23:11\x20GMT\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20232\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//W3C//DTD\x20HTML\x203\.2\x20Final//EN\&quot;&gt;\n&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;\n&lt;h1&gt;Not\x20Found&lt;/h1&gt;\n&lt;p&gt;The\x20requested\x20URL\x20was\x20not\x20found\x20on\x20the\x20server\.\x20If\x20you\x20entered\x20the\x20URL\x20manually\x20please\x20check\x20your\x20spelling\x20and\x20try\x20again\.&lt;/p&gt;\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 404 NOT FOUND&#xa;    Server: gunicorn&#xa;    Date: Tue, 21 Sep 2021 10:23:11 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 232&#xa;    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;&#xa;    &lt;title&gt;404 Not Found&lt;/title&gt;&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;&#xa;    &lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Server: gunicorn&#xa;    Date: Tue, 21 Sep 2021 10:23:06 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 19386&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;&#xa;    &lt;title&gt;Security Dashboard&lt;/title&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/static/images/icon/favicon.ico&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/bootstrap.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/font-awesome.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/themify-icons.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/metisMenu.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/owl.carousel.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/slicknav.min.css&quot;&gt;&#xa;    &lt;!-&#45; amchar&#xa;  HTTPOptions: &#xa;    HTTP/1.0 200 OK&#xa;    Server: gunicorn&#xa;    Date: Tue, 21 Sep 2021 10:23:06 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Allow: GET, HEAD, OPTIONS&#xa;    Content-Length: 0&#xa;  RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    Content-Length: 196&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;h1&gt;&lt;p&gt;Bad Request&lt;/p&gt;&lt;/h1&gt;&#xa;    Invalid HTTP Version &amp;#x27;Invalid HTTP Version: &amp;#x27;RTSP/1.0&amp;#x27;&amp;#x27;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 404 NOT FOUND&#xa;    Server: gunicorn&#xa;    Date: Tue, 21 Sep 2021 10:23:11 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 232&#xa;    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;&#xa;    &lt;title&gt;404 Not Found&lt;/title&gt;&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;&#xa;    &lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Server: gunicorn&#xa;    Date: Tue, 21 Sep 2021 10:23:06 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 19386&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;&#xa;    &lt;title&gt;Security Dashboard&lt;/title&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/static/images/icon/favicon.ico&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/bootstrap.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/font-awesome.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/themify-icons.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/metisMenu.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/owl.carousel.min.css&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/slicknav.min.css&quot;&gt;&#xa;    &lt;!-&#45; amchar</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 200 OK&#xa;    Server: gunicorn&#xa;    Date: Tue, 21 Sep 2021 10:23:06 GMT&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Allow: GET, HEAD, OPTIONS&#xa;    Content-Length: 0</elem>
 <elem key="RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    Content-Length: 196&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;h1&gt;&lt;p&gt;Bad Request&lt;/p&gt;&lt;/h1&gt;&#xa;    Invalid HTTP Version &amp;#x27;Invalid HTTP Version: &amp;#x27;RTSP/1.0&amp;#x27;&amp;#x27;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
 </script><script id="http-server-header" output="gunicorn"><elem>gunicorn</elem>
 </script></port>
 </ports>
-<times srtt="29611" rttvar="17980" to="101531"/>
+<times srtt="26817" rttvar="11869" to="100000"/>
 </host>
-<runstats><finished time="1632083330" timestr="Sun Sep 19 21:28:50 2021" summary="Nmap done at Sun Sep 19 21:28:50 2021; 1 IP address (1 host up) scanned in 128.15 seconds" elapsed="128.15" exit="success"/><hosts up="1" down="0" total="1"/>
+<runstats><finished time="1632219052" timestr="Tue Sep 21 11:10:52 2021" summary="Nmap done at Tue Sep 21 11:10:52 2021; 1 IP address (1 host up) scanned in 128.32 seconds" elapsed="128.32" exit="success"/><hosts up="1" down="0" total="1"/>
 </runstats>
 </nmaprun>
