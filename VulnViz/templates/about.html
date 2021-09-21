@@ -42,7 +42,40 @@
       <br />
       <div
         class="container outer-container rounded bg-light bg-opacity-75 p-5"
-      ></div>
+      >
+          <p>Git and Source Code
+
+To install the project follow the steps below:
+
+Make sure you have python, Nmap, git, and nikto installed on your local machine.
+https://www.python.org/downloads/ (Version 3.8 or above is required)
+https://nmap.org/download.html
+https://github.com/sullo/nikto
+https://git-scm.com/downloads
+Once all of the above requirements are installed, open your terminal
+Type “sudo git clone https://git-teaching.cs.bham.ac.uk/mod-msc-proj-2020/mjg089.git"
+Wait for installation to complete
+Change directory into the newly downloaded file.
+If you get lost, refer to the file structure in section 4.4
+
+User Guide
+
+Once the git repository has been cloned, follow these steps:
+
+Make sure you are in the /VulnViz directory within your preferred terminal emulator
+Type “sudo source venv/bin/activate” and hit enter. This activates the virtual python environment.
+Now you can run the main script. From the root directory type:
+ “sudo python main.py IP local/remote”
+Your local IP address is easily located in the network settings of your operating system, and the local keyword should be used if this is the IP address you would like to scan.
+Otherwise enter another IP address and the remote keyword.
+There is no need to add /24 to scan the subnet as VulnViz handles this for you
+Once the scan has concluded the system will automatically start a flask server on port 5000. Either follow the URL directly from the terminal, or use this one directly:
+http://127.0.0.1:5000/
+You are now viewing the interactive network graph and should be able to recognise some of the device names on your network.
+If any of the nodes are in red, they are able to be scanned using the nmap-vulners script, accessed using the advanced scan option after selecting the node in question.
+This scan can take a considerable length of time, be patient.
+Have fun exploring your network topology!</p>
+      </div>
       <br />
       <br />
     </div>

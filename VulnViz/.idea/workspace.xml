@@ -7,7 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57987d52-d4c1-45e6-bf15-c31b41415229" name="Default Changelist" comment="final commit" />
+    <list default="true" id="57987d52-d4c1-45e6-bf15-c31b41415229" name="Default Changelist" comment="final commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/nodes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/netjsongraph.js/data/nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/netjsongraph.js/data/nodes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/targetdash.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/targetdash.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +38,13 @@
       <map>
         <entry key="FLASK_APP" value="app" />
       </map>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="FF_ONLY" />
+      </set>
     </option>
   </component>
   <component name="Git.Settings">
@@ -234,7 +247,9 @@
       <workItem from="1632059352601" duration="2291000" />
       <workItem from="1632080542644" duration="4525000" />
       <workItem from="1632126816933" duration="1436000" />
-      <workItem from="1632128407532" duration="1353000" />
+      <workItem from="1632128407532" duration="1927000" />
+      <workItem from="1632160146885" duration="1830000" />
+      <workItem from="1632215363452" duration="100000" />
     </task>
     <task id="LOCAL-00001" summary="Nearly finished">
       <created>1629468636073</created>
@@ -264,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632129406907</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="final commit">
+      <created>1632129829522</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632129829522</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
