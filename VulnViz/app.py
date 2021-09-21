@@ -18,8 +18,13 @@ def nikto_scan():
         req = request.form
         ip = req["ip"]
         ports = req["ports"]
-    time.sleep(20)
-    return render_template('nikto.html', ip=ip, ports=ports)
+        cmd = f"nikto -h {ip} -port {ports}"
+    proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+    proc.wait()
+    niktolist = []
+    for line in proc.stdout:
+        niktolist.append(line)
+    return render_template('nikto.html', ip=ip, ports=ports, list=niktolist)
 
 
 @app.route('/About')
